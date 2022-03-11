@@ -8,12 +8,13 @@
 */
 
 int main(void)
-{
-char a;
-for (a = 'a'; a <= 'z'; a++)
-if (a != 'e' && a != 'q')
-putchar (a);
-putchar ('\n');
+char c;
+
+for (c = 'a'; c <= 'z'; c++)
+
+if (c != 'e' && c != 'q')
+putchar(c);
+
+putchar('\n');
 return (0);
 }
-
