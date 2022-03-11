@@ -20,7 +20,7 @@ putchar(' ');
 putchar(i / 10 + 48);
 putchar(i % 10 + 48);
 }
-else (j * 100 + i != 9899)
+else if (j * 100 + i != 9899)
 {																		putchar(',');																	putchar(' ');
 																		}
 }
