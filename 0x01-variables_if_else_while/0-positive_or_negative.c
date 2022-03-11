@@ -3,10 +3,10 @@
 #include <time.h>
 
 /**
- * * main - Evaluating random numbers
- * *
- * * Return: Always 0 (Success)
- * */
+* main - Evaluating random numbers
+*
+* Return: Always 0 (Success)
+*/
 
 int main(void)
 {
