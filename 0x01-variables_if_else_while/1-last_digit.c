@@ -3,11 +3,11 @@ nclude <stdio.h>
 #include <time.h>
 
 /**
- *  * main - finds the last int in a random number
- *   *
- *    * Description: The numbers are generated automatically
- *     * Return: Always(0) Success
- *      */
+* main - finds the last int in a random number
+*
+* Description: The numbers are generated automatically
+* Return: Always(0) Success
+*/
 
 int main(void)
 {
@@ -31,3 +31,4 @@ else if (last_digit < 6 && last_digit != 0)
 printf("less than 6 and not 0\n");
 }
 return (0);
+}
