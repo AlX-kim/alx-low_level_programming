@@ -3,7 +3,7 @@
 /**
 * main - main - two pairs of numbers that do not repeat
 *
-* Return (0)
+* Return: Always 0 (Success)
 */
 int main(void)
 {
@@ -21,8 +21,10 @@ putchar(i / 10 + 48);
 putchar(i % 10 + 48);
 }
 if (j * 100 + i != 9899)
-{																		putchar(',');																	putchar(' ');
-																		}
+{		
+putchar(',');
+putchar(' ');
+}
 }
 }
 putchar ('\n');
