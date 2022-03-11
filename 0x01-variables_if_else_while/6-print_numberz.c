@@ -2,7 +2,7 @@
 
 /**
 * main - Evaluating random numbers
-* 
+*
 * Return: Always 0 (Success)
 */
 
@@ -14,7 +14,7 @@ while (n < 58)
 {
 putchar (n);
 n++;
-}			
+}
 putchar ('\n');
 
 return (0);
