@@ -4,15 +4,15 @@
 /**
 * main - alphabet in lowercase, followed by a new line.
 *
-* Always return(0)
+* Return: Always 0 (Success)
 */
 int main(void)
 {
 char ch = 'a';
-for ( ch = 'a'; ch <= 'z'; ch++)
+for (ch = 'a'; ch <= 'z'; ch++)
 {
 putchar(ch);
 }
 putchar ('\n');
-return(0);
+return (0);
 }
