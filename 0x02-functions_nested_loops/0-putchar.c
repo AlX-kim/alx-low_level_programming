@@ -19,5 +19,5 @@ _putchar('a');
 _putchar('r');
 _putchar('n');
 _putchar('\n');
-return (write(1, &c, 1));	
+return (0);
 }
