@@ -1,17 +1,15 @@
 #include "main.h"
 /**
-* print_numbers - prints nmubers from 0-9
-*
+* mul - multiplies two integers
+*@a: number being tested
+*@b: number being tested
 * Return: Always 0.
 */
-void print_numbers(void)
-{
-int c;
 
-for (c = 48; c <=57; c++);
+int mul(int a, int b)
 {
-_putchar(c);
-}
-_putchar('\n');
+int result;
 
+result = a * b;
+return (result);
 }
