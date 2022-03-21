@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
-* print_array - print array
+* *_strcpy - copy strg to another string
 * @dest: character pointer
 * @src: character source
 *
-* @_strcpy: copies the string pointed to by src
 * Return: return pointer
 */
 
