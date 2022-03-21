@@ -2,6 +2,7 @@
 #include <stdio.h>
 /**
 * main - check the code
+* _strcpy - copy strg to another string
 *
 * Return: Always 0.
 */

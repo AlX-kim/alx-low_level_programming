@@ -3,7 +3,7 @@
 /**
 * main - check the code
 *
-* @_strcpy: copy strg to another string
+* _strcpy: copy strg to another string
 * @dest: character pointer
 * @src: character source
 *
