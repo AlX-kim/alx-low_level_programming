@@ -5,7 +5,7 @@
 * @dest: character pointer
 * @src: character source
 *
-* Description: copies string pointed to by src
+* copies string pointed to strcpy to src
 * Return: return pointer
 */
 
