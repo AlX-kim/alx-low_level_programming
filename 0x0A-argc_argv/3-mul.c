@@ -1,28 +1,27 @@
-#include <stdio.h>
 #include <stdlib.h>
-
+#include <stdio.h>
 /**
-* main - adds all positive numbers and prints it
-* @argc: argument count
-* @argv: argument vector
-* Return: 0 for success
+*main - multiplies two numbers
+*
+*@argc:arguement count
+*@argv:arguement vector
+*Return:0(success)
 */
-
 int main(int argc, char *argv[])
 {
-int i, res;
-res = 0;
-for (i = 0; i < argc; i++)
+int product = 0;
+int x, y;
+if (argc == 3)
 {
-if (i > 0)
-{
-if (atoi(argv[i]) == 0)
-{
-return (printf("Error\n"), 1);
-}
-res += atoi(argv[i]);
-}
-}
-printf("%d\n", res);
+x = atoi(argv[1]);
+y = atoi(argv[2]);
+product = x * y;
+printf("%d\n", product);
 return (0);
+}
+else
+{
+printf("Error\n");
+return (1);
+}
 }
