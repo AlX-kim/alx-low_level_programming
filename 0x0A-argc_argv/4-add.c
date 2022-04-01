@@ -1,28 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
-* main - adds all positive numbers and prints it
-* @argc: argument count
-* @argv: argument vector
-* Return: 0 for success
+*main - adds positive numbers
+*
+*@argc:arguement count
+*@argv:arguement vector
+*
+*Return:0(success)
+*
 */
-
 int main(int argc, char *argv[])
 {
-int i, res;
-res = 0;
-for (i = 0; i < argc; i++)
+int i, j, sum;
+for (i = 1; i < argc; i++)
 {
-if (i > 0)
+for (j = 0; argv[i][j]; j++)
 {
-if (atoi(argv[i]) == 0)
+if (argv[i][j] < '0' || argv[i][j] > '9')
 {
-return (printf("Error\n"), 1);
-}
-res += atoi(argv[i]);
+printf("Error\n");
+return (1);
 }
 }
-printf("%d\n", res);
+sum += atoi(argv[i]);
+}
+printf("%d\n", sum);
 return (0);
 }
