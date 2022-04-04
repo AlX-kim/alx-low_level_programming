@@ -32,7 +32,7 @@ for (j = 0; s2[j] != '\0'; j++)
 len2++;
 }
 length = len1 + len2;
-p = malloc((sizeof(char) * length) + 1);
+p = malloc((sizeof(char) * length) +1);
 if (p == NULL)
 {
 return (NULL);
