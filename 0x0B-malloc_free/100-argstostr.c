@@ -45,6 +45,7 @@ if (str != NULL)
 return (str);
 }
 else
+{
 return (NULL);
 }
 }
