@@ -28,7 +28,7 @@ for (index = 0; index < bytes; index++)
 {
 opcode = *(unsigned char *)address;
 printf("%.2x", opcode);
-if( x == bytes - 1)
+if (index == bytes - 1)
 continue;
 printf(" ");
 address++;
