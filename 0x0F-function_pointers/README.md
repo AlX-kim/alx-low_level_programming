@@ -1,0 +1,1 @@
+Better pointer to functions
