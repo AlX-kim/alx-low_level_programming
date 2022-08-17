@@ -1,30 +1,44 @@
 #!/usr/bin/python3
-"""
-5-island_perimeter
-"""
+"""module to find island perimeter"""
 
 
 def island_perimeter(grid):
-    """
-    island_perimeter: returns the preimeter of the island described in grid.
-
-    @grid(list): a list of lists of integers.
-    """
-    perimeter = 0
-    for y in range(len(grid)):
-        for x in range(len(grid[0])):
-            if grid[y][x] == 1:
-                perimeter += 4
-                if y > 0:
-                    if grid[y - 1][x] != 0:
-                        perimeter -= 1
-                if y < len(grid) - 1:
-                    if grid[y + 1][x] != 0:
-                        perimeter -= 1
-                if x > 0:
-                    if grid[y][x - 1] != 0:
-                        perimeter -= 1
-                if x < len(grid[0]) - 1:
-                    if grid[y][x + 1] != 0:
-                        perimeter -= 1
-    return perimeter
+    """that returns the perimeter of the island described in grid"""
+    count = 0
+    for column in range(len(grid)):
+        for row in range(len(grid[column])):
+            if grid[column][row] == 1:
+                # verify up
+                if column - 1 < 0:
+                    count += 1
+                else:
+                    try:
+                        if grid[column - 1][row] == 0 or column - 1 < 0:
+                            count += 1
+                    except:
+                        pass
+                # verify down
+                if column + 1 > len(grid) - 1:
+                    count += 1
+                else:
+                    try:
+                        if grid[column + 1][row] == 0:
+                            count += 1
+                    except:
+                        pass
+                # verify right
+                if row + 1 > len(grid[column]) - 1:
+                    count += 1
+                else:
+                    try:
+                        if grid[column][row + 1] == 0:
+                            count += 1
+                    except:
+                        pass
+                # verify left
+                try:
+                    if grid[column][row - 1] == 0 or row - 1 < 0:
+                        count += 1
+                except:
+                    pass
+    return count
