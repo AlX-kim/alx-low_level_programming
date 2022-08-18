@@ -1,44 +1,24 @@
 #!/usr/bin/python3
-"""module to find island perimeter"""
+"""
+    Function that returns the perimeter\
+    of the island described in grid
+"""
 
 
 def island_perimeter(grid):
-    """that returns the perimeter of the island described in grid"""
-    count = 0
-    for column in range(len(grid)):
-        for row in range(len(grid[column])):
-            if grid[column][row] == 1:
-                # verify up
-                if column - 1 < 0:
-                    count += 1
-                else:
-                    try:
-                        if grid[column - 1][row] == 0 or column - 1 < 0:
-                            count += 1
-                    except:
-                        pass
-                # verify down
-                if column + 1 > len(grid) - 1:
-                    count += 1
-                else:
-                    try:
-                        if grid[column + 1][row] == 0:
-                            count += 1
-                    except:
-                        pass
-                # verify right
-                if row + 1 > len(grid[column]) - 1:
-                    count += 1
-                else:
-                    try:
-                        if grid[column][row + 1] == 0:
-                            count += 1
-                    except:
-                        pass
-                # verify left
-                try:
-                    if grid[column][row - 1] == 0 or row - 1 < 0:
-                        count += 1
-                except:
-                    pass
-    return count
+    """" Returns the perimeter of the\
+    island described in grid"""
+    if not len(grid):
+        return 0
+
+    perimeter = 0
+    for i, g_cell in enumerate(grid):
+        for j, cell in enumerate(g_cell):
+            if cell:
+                perimeter += 4
+                if i != 0 and grid[i - 1][j] == 1:
+                    perimeter -= 2
+                if j + 1 != len(g_cell) and g_cell[j + 1] == 1:
+                    perimeter -= 2
+
+    return perimeter
